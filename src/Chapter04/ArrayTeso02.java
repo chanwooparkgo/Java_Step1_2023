@@ -1,0 +1,20 @@
+package Chapter04;
+
+import javax.swing.JOptionPane;
+
+public class ArrayTeso02 {
+
+	public static void main(String[] args) {
+		
+		String student[] = new String[7];
+		String phone[] = new String[7];
+		int i,j;
+		for(i=0; i<student.length; i++) {
+			student[i]=JOptionPane.showInputDialog("이름");
+			phone[i]=JOptionPane.showInputDialog("전화번호");//010-0000-0000
+			
+			System.out.println("이름: "+ student[i]+ "전화번호: "+phone[i]);
+		}//for
+	}//main
+
+}//class
